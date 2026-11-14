@@ -1,11 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CXDP Project</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CampusMarket - Welcome Back | Sign In</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
+
+  <div class="auth-container">
     
+    <!-- ======================================================================
+         LEFT SECTION: Dark Showcase
+         Visible on Desktop (>= 1025px).
+         Hidden on tablet & mobile (<= 1024px).
+         ====================================================================== -->
+    <aside class="auth-left-section" aria-label="CampusMarket Highlights">
+      
+      <!-- Brand Logo & Slogan Header -->
+      <header class="brand-header">
+        <div class="brand-identity">
+          <div class="brand-badge" aria-hidden="true">CM</div>
+          <span class="brand-name">CampusMarket.</span>
+        </div>
+        <p class="brand-tagline">YOUR CAMPUS. YOUR MARKETPLACE.</p>
+      </header>
+
+      <!-- Main Value Proposition & Trending Card -->
+      <main class="left-hero-content">
+        
+        <!-- Verification Pill -->
+        <div class="verified-network-pill">
+          <span class="pulse-dot"></span>
+          <span>Academic Verified Student Network</span>
+        </div>
+
+        <!-- Big Bold Title -->
+        <h1 class="hero-heading">
+          <span>Buy Smart.</span>
+          <span>Sell Easy.</span>
+          <span>Live Campus.</span>
+        </h1>
+
+        <!-- Subtitle Description -->
+        <p class="hero-description">
+          Discover affordable essentials, find great deals, and give your unused items a second life within your campus community.
+        </p>
+
+        <!-- Trending Campus Categories Card -->
+        <section class="trending-card" aria-label="Trending Campus Categories">
+          <div class="card-top-bar">
+            <span class="card-title">TRENDING CAMPUS CATEGORIES</span>
+            <span class="card-deals-badge">Verified Deals</span>
+          </div>
+
+          <!-- 4 Category Items Grid -->
+          <div class="categories-grid">
+            
+            <!-- Category 1: Textbooks -->
+            <div class="category-item" tabindex="0">
+              <i class="fa-solid fa-book-open category-icon"></i>
+              <span class="category-name">Textbooks</span>
+              <span class="category-sub">340+ listed</span>
+            </div>
+
+            <!-- Category 2: Audio & Tech -->
+            <div class="category-item" tabindex="0">
+              <i class="fa-solid fa-headphones category-icon"></i>
+              <span class="category-name">Audio &amp; Tech</span>
+              <span class="category-sub">Laptops, AirPods</span>
+            </div>
+
+            <!-- Category 3: Backpacks -->
+            <div class="category-item" tabindex="0">
+              <i class="fa-solid fa-bag-shopping category-icon"></i>
+              <span class="category-name">Backpacks</span>
+              <span class="category-sub">Daily essentials</span>
+            </div>
+
+            <!-- Category 4: Sports Gear -->
+            <div class="category-item" tabindex="0">
+              <i class="fa-solid fa-basketball category-icon"></i>
+              <span class="category-name">Sports Gear</span>
+              <span class="category-sub">Gym &amp; outdoors</span>
+            </div>
+
+          </div>
+
+          <!-- Latest Drop Notification Strip -->
+          <div class="latest-drop-banner">
+            <span class="dot"></span>
+            <span><strong class="bold-text">Latest drop:</strong> Calculus III Stewart Edition just reserved 4m ago</span>
+          </div>
+
+        </section>
+
+      </main>
+
+    </aside>
+
+
+    <!-- ======================================================================
+         RIGHT SECTION: Authentication Form (Light Theme)
+         Full width on mobile/tablet. Centered, responsive.
+         ====================================================================== -->
+    <main class="auth-right-section">
+      
+      <!-- Top Navigation Bar -->
+      <header class="auth-top-bar">
+        
+        <!-- Mobile/Tablet Brand Logo (Shows only when left section is hidden) -->
+        <a href="./index.html" class="mobile-brand-header">
+          <div class="mobile-brand-badge">CM</div>
+          <span class="mobile-brand-title">CampusMarket.</span>
+        </a>
+
+        <!-- Help & Guest Links -->
+        <nav class="top-nav-links" aria-label="Auxiliary navigation">
+          <a href="#" class="top-nav-link">Help Center</a>
+          <span class="nav-dot" aria-hidden="true">•</span>
+          <a href="./pages/home/HomePage.html" class="top-nav-link">Browse as Guest</a>
+        </nav>
+      </header>
+
+      <!-- Center Auth Form Container -->
+      <section class="auth-form-wrap">
+        <div class="auth-form-container">
+          
+          <div class="form-header">
+            <h2 class="form-title">Welcome Back!</h2>
+            <p class="form-subtitle">Sign in to continue exploring CampusMarket.</p>
+          </div>
+
+          <form id="loginForm" class="auth-form" novalidate>
+            
+            <!-- Campus Email Address Field -->
+            <div class="form-group">
+              <div class="label-row">
+                <label for="email" class="field-label">Campus Email Address</label>
+              </div>
+              <div class="input-wrapper">
+                <i class="fa-regular fa-envelope input-icon"></i>
+                <input 
+                  type="email" 
+                  id="email" 
+                  name="email" 
+                  class="form-input" 
+                  placeholder="regd. number@university.edu.in" 
+                  required 
+                  autocomplete="email"
+                >
+              </div>
+            </div>
+
+            <!-- Password Field -->
+            <div class="form-group">
+              <div class="label-row">
+                <label for="password" class="field-label">Password</label>
+              </div>
+              <div class="input-wrapper">
+                <i class="fa-solid fa-lock input-icon"></i>
+                <input 
+                  type="password" 
+                  id="password" 
+                  name="password" 
+                  class="form-input has-toggle" 
+                  placeholder="••••••••••••" 
+                  required 
+                  autocomplete="current-password"
+                >
+                <button type="button" id="togglePassword" class="password-toggle-btn" aria-label="Show password">
+                  <i id="eyeIcon" class="fa-regular fa-eye"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- Remember Me & Forgot Password -->
+            <div class="form-options-row">
+              <label class="remember-label" for="rememberMe">
+                <input type="checkbox" id="rememberMe" name="rememberMe" class="custom-checkbox">
+                <span>Remember me</span>
+              </label>
+              <a href="./pages/auth/ForgotPassword.html" class="forgot-link">Forgot Password?</a>
+            </div>
+
+            <!-- Sign In Submit Button -->
+            <button type="submit" id="signInBtn" class="btn-signin">
+              Sign In
+            </button>
+
+            <!-- Divider OR -->
+            <div class="auth-divider">
+              <span>OR</span>
+            </div>
+
+            <!-- Google Sign-in Button -->
+            <button type="button" id="googleSignInBtn" class="btn-google">
+              <i class="fa-brands fa-google google-icon"></i>
+              <span>Continue with Student Google ID</span>
+            </button>
+
+            <!-- Bottom Create Account Link -->
+            <div class="auth-bottom-switch">
+              <span>New to CampusMarket?</span>
+              <a href="./pages/auth/Register.html" class="signup-link">Create an account</a>
+            </div>
+
+          </form>
+
+        </div>
+      </section>
+
+      <!-- Spacer for clean vertical symmetry -->
+      <div class="auth-bottom-spacer"></div>
+
+    </main>
+
+  </div>
+
+  <script src="./js/auth.js"></script>
 </body>
 </html>

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CampusMarket - Create Student Account</title>
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    .perks-list {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-top: 20px;
+    }
+    .perk-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      background: rgba(255, 255, 255, 0.025);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      padding: 14px 16px;
+      border-radius: var(--radius-md);
+    }
+    .perk-icon-wrap {
+      width: 28px;
+      height: 28px;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.08);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      color: #fff;
+    }
+    .perk-title {
+      font-size: 13px;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 2px;
+    }
+    .perk-desc {
+      font-size: 11.5px;
+      color: var(--dark-text-muted);
+      line-height: 1.35;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="auth-container">
+    
+    <!-- ======================================================================
+         LEFT SECTION: Dark Showcase (Hidden on tablet & mobile <= 1024px)
+         ====================================================================== -->
+    <aside class="auth-left-section" aria-label="CampusMarket Registration Perks">
+      
+      <!-- Brand Logo & Slogan Header -->
+      <header class="brand-header">
+        <div class="brand-identity">
+          <div class="brand-badge" aria-hidden="true">CM</div>
+          <span class="brand-name">CampusMarket.</span>
+        </div>
+        <p class="brand-tagline">YOUR CAMPUS. YOUR MARKETPLACE.</p>
+      </header>
+
+      <!-- Main Showcase Content -->
+      <main class="left-hero-content">
+        
+        <div class="verified-network-pill">
+          <span class="pulse-dot"></span>
+          <span>Verified Student Community</span>
+        </div>
+
+        <h1 class="hero-heading">
+          <span>Join Smart.</span>
+          <span>Trade Safe.</span>
+          <span>Grow Together.</span>
+        </h1>
+
+        <p class="hero-description">
+          Set up your verified profile in seconds. Connect with thousands of classmates buying and selling textbooks, tech, and gear every day.
+        </p>
+
+        <!-- Perks Card -->
+        <section class="trending-card" aria-label="Student Network Benefits">
+          <div class="card-top-bar">
+            <span class="card-title">STUDENT NETWORK ADVANTAGES</span>
+            <span class="card-deals-badge">100% Free</span>
+          </div>
+
+          <div class="perks-list">
+            <div class="perk-item">
+              <div class="perk-icon-wrap">
+                <i class="fa-solid fa-dollar-sign" aria-hidden="true"></i>
+              </div>
+              <div>
+                <div class="perk-title">0% Platform Selling Fees</div>
+                <div class="perk-desc">Keep 100% of your earnings when selling textbooks and gear to peers.</div>
+              </div>
+            </div>
+
+            <div class="perk-item">
+              <div class="perk-icon-wrap">
+                <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+              </div>
+              <div>
+                <div class="perk-title">Verified Student Badge</div>
+                <div class="perk-desc">Only authenticated college emails can chat, make offers, and list products.</div>
+              </div>
+            </div>
+
+            <div class="perk-item">
+              <div class="perk-icon-wrap">
+                <i class="fa-regular fa-clock" aria-hidden="true"></i>
+              </div>
+              <div>
+                <div class="perk-title">Instant Campus Meetups</div>
+                <div class="perk-desc">Pick up reserved items between lectures at designated student campus spots.</div>
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+      </main>
+
+      <!-- Left Bottom Footer -->
+      <footer class="left-footer">
+        <span class="left-tag">Made for Students, Built for Campus.</span>
+        <div class="verified-status">
+          <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+          <span>Peer-to-Peer Verified</span>
+        </div>
+      </footer>
+
+    </aside>
+
+
+    <!-- ======================================================================
+         RIGHT SECTION: Registration Form (Light Theme)
+         Full width on mobile/tablet. Centered, responsive.
+         ====================================================================== -->
+    <main class="auth-right-section">
+      
+      <!-- Top Navigation Bar -->
+      <header class="auth-top-bar">
+        <!-- Mobile/Tablet Brand Logo -->
+        <a href="../../index.html" class="mobile-brand-header">
+          <div class="mobile-brand-badge">CM</div>
+          <span class="mobile-brand-title">CampusMarket.</span>
+        </a>
+
+        <!-- Help & Guest Links -->
+        <nav class="top-nav-links" aria-label="Auxiliary navigation">
+          <a href="#" class="top-nav-link">Help Center</a>
+          <span class="nav-dot" aria-hidden="true">•</span>
+          <a href="../../index.html" class="top-nav-link" style="color: #09090b; font-weight: 600;">Sign In</a>
+        </nav>
+      </header>
+
+      <!-- Center Auth Form Container -->
+      <section class="auth-form-wrap">
+        <div class="auth-form-container">
+          
+          <div class="form-header">
+            <h2 class="form-title">Create Account</h2>
+            <p class="form-subtitle">Register with your campus email to get started.</p>
+          </div>
+
+          <form id="registerForm" class="auth-form" novalidate>
+            
+            <!-- Full Name Field -->
+            <div class="form-group">
+              <div class="label-row">
+                <label for="fullName" class="field-label">Full Name</label>
+              </div>
+              <div class="input-wrapper">
+                <i class="fa-solid fa-user input-icon" aria-hidden="true"></i>
+                <input 
+                  type="text" 
+                  id="fullName" 
+                  name="fullName" 
+                  class="form-input" 
+                  placeholder="Rahul Sharma" 
+                  required 
+                  autocomplete="name"
+                >
+              </div>
+            </div>
+
+            <!-- Campus Email Address Field -->
+            <div class="form-group">
+              <div class="label-row">
+                <label for="regEmail" class="field-label">Campus Email Address</label>
+              </div>
+              <div class="input-wrapper">
+                <i class="fa-regular fa-envelope input-icon" aria-hidden="true"></i>
+                <input 
+                  type="email" 
+                  id="regEmail" 
+                  name="email" 
+                  class="form-input" 
+                  placeholder="regd. number@college.edu.in" 
+                  required 
+                  autocomplete="email"
+                >
+              </div>
+            </div>
+
+            <!-- Student Contact Number Field -->
+            <div class="form-group">
+              <div class="label-row">
+                <label for="contactNumber" class="field-label">Contact Number</label>
+              </div>
+              <div class="input-wrapper">
+                <i class="fa-regular fa-envelope input-icon" aria-hidden="true"></i>
+                <input 
+                  type="number" 
+                  id="contactNumber" 
+                  name="contactNumber" 
+                  class="form-input" 
+                  placeholder="123-456-7890" 
+                  required 
+                  autocomplete="email"
+                >
+              </div>
+            </div>
+
+            <!-- Campus Selection Field -->
+            <div class="form-group">
+              <div class="label-row">
+                <label for="campusName" class="field-label">Campus</label>
+              </div>
+              <div class="input-wrapper">
+                <i class="fa-solid fa-graduation-cap input-icon" aria-hidden="true"></i>
+                <select id="campusName" name="campusName" class="form-input" required>
+                  <option value="" disabled selected>Select your campus</option>
+                  <option value="Bhubaneswar">Bhubaneswar</option>
+                  <option value="Paralakhemundi">Paralakhemundi</option>
+                  <option value="Rayagada">Rayagada</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Password Field -->
+            <div class="form-group">
+              <div class="label-row">
+                <label for="regPassword" class="field-label">Password</label>
+              </div>
+              <div class="input-wrapper">
+                <i class="fa-solid fa-lock input-icon" aria-hidden="true"></i>
+                <input 
+                  type="password" 
+                  id="regPassword" 
+                  name="password" 
+                  class="form-input has-toggle" 
+                  placeholder="Create a secure password" 
+                  required 
+                  autocomplete="new-password"
+                >
+                <button type="button" id="toggleRegPassword" class="password-toggle-btn" aria-label="Show password">
+                  <i id="eyeIconReg" class="fa-regular fa-eye" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- Agree to Terms -->
+            <div class="form-options-row">
+              <label class="remember-label" for="agreeTerms">
+                <input type="checkbox" id="agreeTerms" name="agreeTerms" class="custom-checkbox" required>
+                <span>I agree to Student Safety Guidelines &amp; Terms</span>
+              </label>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" id="createAccountBtn" class="btn-signin">
+              Create Student Account
+            </button>
+
+            <!-- Divider OR -->
+            <div class="auth-divider">
+              <span>OR</span>
+            </div>
+
+            <!-- Google Sign-up Button -->
+            <button type="button" id="googleSignUpBtn" class="btn-google">
+              <i class="fa-brands fa-google google-icon" aria-hidden="true"></i>
+              <span>Sign up with Student Google ID</span>
+            </button>
+
+            <!-- Bottom Sign-in Link -->
+            <div class="auth-bottom-switch">
+              <span>Already have an account?</span>
+              <a href="../../index.html" class="signup-link">Sign In</a>
+            </div>
+
+          </form>
+
+        </div>
+      </section>
+
+      <div class="auth-bottom-spacer"></div>
+
+    </main>
+
+  </div>
+
+  <script src="../../js/auth.js"></script>
+  <script>
+    // Registration handling
+    const regForm = document.getElementById('registerForm');
+    const toggleRegPassword = document.getElementById('toggleRegPassword');
+    const regPassword = document.getElementById('regPassword');
+    const eyeIconReg = document.getElementById('eyeIconReg');
+
+    if (toggleRegPassword && regPassword && eyeIconReg) {
+      toggleRegPassword.addEventListener('click', () => {
+        const isPass = regPassword.getAttribute('type') === 'password';
+        regPassword.setAttribute('type', isPass ? 'text' : 'password');
+        eyeIconReg.className = isPass ? 'fa-regular fa-eye-slash' : 'fa-regular fa-eye';
+        toggleRegPassword.setAttribute('aria-label', isPass ? 'Hide password' : 'Show password');
+      });
+    }
+
+    if (regForm) {
+      regForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const fullName = document.getElementById('fullName').value.trim();
+        const email = document.getElementById('regEmail').value.trim();
+        const campus = document.getElementById('campusName').value.trim();
+        const password = regPassword.value;
+        const agreed = document.getElementById('agreeTerms').checked;
+
+        if (!fullName || !email || !password) {
+          alert('Please fill out all required fields.');
+          return;
+        }
+
+        if (!agreed) {
+          alert('Please accept the student safety terms.');
+          return;
+        }
+
+        const newUser = {
+          name: fullName,
+          email: email,
+          campus: campus || 'Centurion University',
+          isLoggedIn: true
+        };
+
+        localStorage.setItem('cm_current_user', JSON.stringify(newUser));
+        alert('Account created successfully! Welcome to CampusMarket.');
+        window.location.href = '../home/HomePage.html';
+      });
+    }
+  </script>
+</body>
+</html>

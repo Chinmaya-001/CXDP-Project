@@ -1,11 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CampusMarket - Home</title>
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: #fafafa;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .home-nav {
+      background: #ffffff;
+      border-bottom: 1px solid #e4e4e7;
+      padding: 16px 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .home-container {
+      max-width: 1200px;
+      margin: 48px auto;
+      padding: 0 24px;
+      width: 100%;
+    }
+    .welcome-card {
+      background: #ffffff;
+      border: 1px solid #e4e4e7;
+      border-radius: 20px;
+      padding: 40px;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+    }
+    .user-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      background: #f4f4f5;
+      border-radius: 9999px;
+      font-size: 13px;
+      font-weight: 500;
+      color: #18181b;
+      margin-bottom: 16px;
+    }
+  </style>
 </head>
 <body>
-    
+  <header class="home-nav">
+    <div style="display: flex; align-items: center; gap: 12px;">
+      <div class="brand-badge" style="background: #000; color: #fff;">CM</div>
+      <span style="font-size: 20px; font-weight: 700;">CampusMarket.</span>
+    </div>
+    <div style="display: flex; align-items: center; gap: 16px;">
+      <a href="../../index.html" style="font-size: 14px; color: #09090b; font-weight: 600; text-decoration: none;">Sign In</a>
+    </div>
+  </header>
+
+  <main class="home-container">
+    <div class="welcome-card">
+      <div class="user-pill" id="userPill">Welcome to CampusMarket</div>
+      <h1 style="font-size: 32px; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 12px;">Explore Campus Listings</h1>
+      <p style="color: #71717a; max-width: 500px; margin: 0 auto 28px;">Discover affordable textbooks, electronics, dorm essentials, and gear from verified students.</p>
+      <a href="../../index.html" style="display: inline-block; background: #000; color: #fff; padding: 12px 24px; border-radius: 12px; text-decoration: none; font-weight: 600; font-size: 14px;">Back to Sign In</a>
+    </div>
+  </main>
+
+  <script>
+    const user = JSON.parse(localStorage.getItem('cm_current_user') || '{}');
+    if (user && user.email) {
+      document.getElementById('userPill').textContent = `Signed in as ${user.email}`;
+    }
+  </script>
 </body>
 </html>
